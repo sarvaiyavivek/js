@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1  align="center">TODAY DATE</h1>
+    <script>
+        let GetDate = function () {
+            //local variable
+           // var CurrentDate = new Date().getDate() + "-" + new Date().getMonth() + "-" + new Date().getFullYear();
+            let date = new Date();
+             let CurrentDate = date.getDate() +  "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+            return CurrentDate;
+        }
+
+        var CurrentDate = GetDate();
+        alert(CurrentDate);
+        console.log(CurrentDate);
+
+    </script>
+</body>
+
+</html>
